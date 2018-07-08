@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import ReactPlayer from 'react-player'
+import hero from '../Assets/NMRiH4.jpg'
 import '../App.css'
 
 class App extends Component {
@@ -10,8 +12,17 @@ class App extends Component {
   // }
   render () {
     return (
-      <div className='App'>
-        <h1 className='App-title'>No More Room in Hell</h1>
+      <div className='HomeContainer'>
+        <div className='Hero'>
+          <div className='center-hero'>
+            <p className='center-hero-item'>No More Room in Hell 2</p>
+          </div>
+          <img src={hero} />
+        </div>
+        <div className='MainContent'>
+          {/* <p>No More Room in Hell</p> */}
+          <ReactPlayer url='https://www.youtube.com/watch?v=VvLJQZ2vOUU' playing width={'700px'} height={'394px'}  />
+        </div>
       </div>
     )
   }
