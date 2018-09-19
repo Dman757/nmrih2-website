@@ -14,6 +14,7 @@ class App extends Component {
     return (
       <div className='HomeContainer'>
         <div className='Hero'>
+        <img className='overlay' src={hero} style={{width: '200px'}}/>
           <div className='center-hero'>
             <p className='center-hero-item'>No More Room in Hell 2</p>
           </div>
